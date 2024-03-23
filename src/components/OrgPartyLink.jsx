@@ -357,7 +357,7 @@ function OrgPartyMapping() {
             </select>
             <summary>
                 <button onClick={previousPage}>{"⬅️"}</button>
-                <span style={{ margin: "0px 10px" }}>{pageNo + 1} / {Math.ceil(Object.values(organizationWiseData[selectedOrg]["Party Donations"]).length / PAGE_SIZE) - 1}</span>
+                <span style={{ margin: "0px 10px" }}>{pageNo + 1} / {Math.ceil(Object.values(organizationWiseData[selectedOrg]["Party Donations"]).length / PAGE_SIZE)}</span>
                 <button onClick={nextPage}>{"➡️"}</button>
                 <input width={100} type="range" min={0} max={Math.floor(Object.values(organizationWiseData[selectedOrg]["Party Donations"]).length / PAGE_SIZE) - 1} step={1} value={pageNo} onChange={e => {
                     e.preventDefault();

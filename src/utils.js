@@ -20,5 +20,5 @@ export function rainbow(numOfSteps, step) {
 }
 
 export function currencyFormatter(v) {
-    return Intl.NumberFormat('en', { style: "currency", currency: "INR", notation: "compact" }).format(v)
+    return Intl.NumberFormat('en-IN', { style: "currency", currency: "INR", notation: "compact", compactDisplay: "long", minimumFractionDigits: 0, maximumFractionDigits: 2 }).format(v)
 }

@@ -57,7 +57,7 @@ function calculatePurchasesSummary() {
     return orgPurchase;
 }
 
-const PAGE_SIZE = 12;
+const PAGE_SIZE = 20;
 
 function Totals() {
     const [pageNo, setPageNo] = useState(0);
@@ -93,7 +93,7 @@ function Totals() {
                 e.preventDefault();
                 setPageNo(parseInt(e.target.value));
             }} />
-            <ResponsiveContainer width="90%" height={300}>
+            <ResponsiveContainer width="90%" height={400}>
                 <BarChart data={getCurrentDataPage()}>
                     <XAxis dataKey="name" />
                     <YAxis tickFormatter={(v, n, p) => currencyFormatter(v)} />
