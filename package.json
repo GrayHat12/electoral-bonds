@@ -6,7 +6,7 @@
   "homepage": "https://GrayHat12.github.io/electoral-bonds",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/electoral-bonds",
     "predeploy": "pnpm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",

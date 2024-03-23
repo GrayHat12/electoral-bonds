@@ -69,6 +69,12 @@ function Totals() {
                     {/* <Legend verticalAlign="top" /> */}
                 </PieChart>
             </ResponsiveContainer>
+            <JsonToTable json={totalRecieved.map(x => {
+                return {
+                    "Party Name": x.name,
+                    "Amount Recieved": currencyFormatter(x["Total Amount"])
+                }
+            })} />
         </article>
     )
 }

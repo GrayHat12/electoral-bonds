@@ -9,9 +9,11 @@
 
 section {
     width: 98vw;
+    margin-bottom: 50px;
 }
 
 article {
     margin: auto;
     width: 96vw;
+    margin-bottom: 20px;
 }
